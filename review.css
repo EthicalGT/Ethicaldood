@@ -1,0 +1,118 @@
+body{
+    background: #24262b;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 34px;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+li a:hover{
+    border: 2px solid #fff;
+    border: none;
+    background: #f44336;
+    transition: 1.0s;
+    background: #f44336;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+
+
+.feedback-info{
+    background: #24262b;
+}
+
+
+
+.row h1{
+    text-align: center;
+    font-size: 55px;
+    color: white;
+}
+.row span{
+    color: orangered;
+    font-size: 55px;
+}
+
+
+.row h2{
+    float: right;
+    margin-right: 480px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.row b{
+    color: #fff;
+}
+
+.feedbacks h4{
+    color: #fff;
+    margin-left: 200px;
+}
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.tbl{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 700px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    margin-left: 320px;
+}
+.tbl thead tr{
+    background-color: #009879;
+    color: #fff;
+    text-align: left;
+}
+
+.tbl th,td{
+    padding: 12px 15px;
+}
+.tbl td{
+    /*background-color: #fff;*/
+    cursor: pointer;
+    color: #fff;
+}
+.tbl tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.tbl tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.tbl tbody tr:last-of-type{
+    border-bottom: 2px solid #009879;
+}
+.tbl tbody tr.active-row{
+    font-weight: bold;
+    color: #009879;
+}
+

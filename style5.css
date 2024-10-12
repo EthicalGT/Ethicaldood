@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#00ccff,#d400d4);
+}
+#newbtn{
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  padding: 10px 10px;
+  border: none;
+  background: #9acd32;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 33px;
+  margin-right: 33px;
+  height: 38px;
+}
+#my_btn{
+	display: none;
+}
+
+#newbtn:hover {
+  background-color: red;
+  transition: 1.0s;
+}
+button.show-modal,
+.modal-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+section.active .show-modal {
+  display: none;
+}
+img{
+	width: 100px;
+	margin-bottom: 15px;
+}
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+}
+section.active .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+a{
+	text-decoration: none;
+}
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 24px;
+  background-color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.9s ease;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+section.active .modal-box {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-box i {
+  font-size: 70px;
+  color: #4070f4;
+}
+.modal-box h2 {
+  font-family: Arno Pro smbd text;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 900;
+  color: #333;
+}
+.modal-box h3 {
+  font-family: Arno Pro smbd text;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+.modal-box .buttons {
+  margin-top: 25px;
+}
+.modal-box button {
+  font-size: 14px;
+  padding: 6px 12px;
+  margin: 0 10px;
+}

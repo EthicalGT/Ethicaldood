@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ethicaldood</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="sub-header-php">
+            <nav>
+                <a href="title.html"><img src="images/ethic.png"></a>
+                <div id="nav">
+	            <ul>
+	         	    <li><a href="title.html">Home</a></li>
+		            <li><a href="html.html">HTML</a></li>
+	           	    <li><a href="php.php">PHP</a></li>
+	         	    <li><a href="">Question Papers</a></li>
+	             	<li><a href="about.html">About Us</a></li>
+	            </ul>
+                </div>
+            </nav>
+            <h1>PHP</h1>
+        </section>
+        <!------PHP content-------->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                   <h2><u>PHP Elements are as follows...</u></h2>
+                   <br><br><br><br>
+                   <h2>1. Basics in PHP</h2>
+                   <p>PHP Delimeters, Data Types, Operators in PHP</p>
+<?php
+$username="root";
+$servername="localhost";
+$password="";
+$database="gt";
+$conn=mysqli_connect($servername, $username, $password,$database);
+if($conn){
+echo "Database Connection is Ready..!<br>";
+}else{
+die("Database Connection Failed..!<br>". mysqli_error($conn));
+}
+$sql="select path from chapter_1";
+$result2=mysqli_query($conn,$sql);
+echo"<table>";
+	while($row=mysqli_fetch_array($result2)){
+	echo"<tr><td>".$row['name']."</td></tr>";
+	echo"<td>"; ?>
+	<a href="<?php echo $row["path"]; ?>" class="red-button">Download</a>
+	<?php echo"</td>";
+	echo"</tr>";
+	}
+echo "</table>";
+?>	
+
+</html>
+<html>
+                   <br><br><br>
+                   <h2>2. Control Structures and Loops</h2>
+                   <p>Conditional Statements and Loops</p>
+                   <a href="" class="red-button">Go Post</a>
+                   <br><br><br>
+                   <h2>3. Arrays and Strings</h2>
+                   <p>Strings, String Functions, Arrays, Array Sorting Functions</p>
+                   <a href="" class="red-button">Go Post</a>
+                   <br><br><br>
+                   <h2>4. Function, Class and Objects</h2>
+                   <p>Types of functions, Class and Objects Creation</p>
+                   <a href="" class="red-button">Go Post</a>
+                   <br><br><br>
+                   <h2>5. Working With Form and form Elements</h2>
+                   <p>Form Tags, PHP Form Methods, PHP functions for Form processing, Sticky Forms, Self-Processing Forms, Validating and Restricting Data</p>
+                   <a href="" class="red-button">Go Post</a>
+                   <br><br><br>
+                   <h2>6. Session and Cookies</h2>
+                   <p>What is Cookie ?, What is Session ?</p>
+                   <a href="" class="red-button">Go Post</a>
+                   <br><br><br>
+                   <h2>7. Database</h2>
+                   <p>Functions of MYSQL, Fetching Data from Database etc.</p>
+                   <a href="" class="red-button">Go Post</a>
+                </div>
+
+
+            </div>
+
+
+
+
+        </section>
+        
+
+
+    <!--footer-->
+    <section class="footer">
+        <h4> About Us</h4>
+        <p>
+            We're from a poor family background. and wanna help students by providing source codes of web development programming languages
+            such as PHP, HTML etc.
+        </p>
+        <p>Made With ♥ by GT</p>
+    </section>
+
+
+        </div>
+
+
+
+    </section>
+
+    <!---------javascript toggle menu-------- --
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>-->
+
+    </body>
+    </html>
